@@ -1,4 +1,6 @@
-# LiveViewNative
+# LiveViewNative Iced
+
+A LiveView Native client for the [Iced Rust UI framework](https://iced.rs/)
 
 > #### Client Spec {: .info}
 >
