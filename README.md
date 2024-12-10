@@ -36,11 +36,11 @@ You can install the client either by running the generator from Elixir
 
 1. Run `mix help lvn.iced.gen` to see the options available for the generator
 2. Run `mix lvn.gen --no-copy` to print the configuration settings to add to support Iced in your application.
-3. Run `mix lvn.iced.gen` to ensure you get the properly generated files. Please note this may overwrite an existing Xcode project.
+3. Run `mix lvn.iced.gen` to ensure you get the properly generated files.
 
 ## Post-Installation
 
-After installation will want to enable an exist LiveView for LiveView Native SwiftUI.
+After installation will want to enable an existing LiveView for LiveView Native Iced.
 
 1. Run `mix lvn.gen.live iced <ContextModule>`
 2. Add `use <NativeModule>, :live_view` to the LiveView module
@@ -50,7 +50,7 @@ After installation will want to enable an exist LiveView for LiveView Native Swi
 ```
 > mix lvn.gen.live iced Home
 * creating lib/my_demo_web/live/home_live.iced.ex
-* creating lib/my_demo_web/live/swiftui/home_live.iced.neex
+* creating lib/my_demo_web/live/iced/home_live.iced.neex
 ```
 
 ```elixir
@@ -62,7 +62,7 @@ end
 
 ## Usage
 
-This plugin provides the SwiftUI rendering behavior of a Phoenix LiveView. Start by adding this plugin to a LiveView. We do this with `LiveViewNative.LiveView`:
+This plugin provides the Iced rendering behavior of a Phoenix LiveView. Start by adding this plugin to a LiveView. We do this with `LiveViewNative.LiveView`:
 
 ```elixir
 defmodule MyAppWeb.HomeLive do
@@ -95,4 +95,4 @@ Further details on additional options and an explanation of template rendering v
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/live_view_native_swiftui>.
+be found at <https://hexdocs.pm/live_view_native_iced>.
